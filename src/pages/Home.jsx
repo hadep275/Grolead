@@ -7,7 +7,7 @@ const Home = () => {
       <div className="banner">
         <h1>Welcome to Grolead</h1>
         <p>Explore our best collections of products</p>
-        <Link href="/products">Shop Now</Link>
+        <Link to="/products">Shop Now</Link>
       </div>
       <div className="featured-products">
         <h2>Featured Products</h2>
