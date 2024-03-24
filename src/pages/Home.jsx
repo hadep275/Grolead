@@ -10,6 +10,7 @@ const Home = () => {
         <Link to="/products">Shop Now</Link>
       </div>
       <div className="featured-products">
+        <Link to="/products/:id"></Link>
         <h2>Featured Products</h2>
       </div>
     </>
