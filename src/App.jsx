@@ -24,6 +24,7 @@ function App() {
     <br/>
     <br/>
       <Routes>
+        
         <Route path="/" element={<Home />} />
         <Route path="/products" element={<ProductListing />} />
         <Route path="/products/:id" element={<ProductDetails />} />

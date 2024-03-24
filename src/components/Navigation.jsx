@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from "react";
+import { Link } from 'react-router-dom';
+
 import "../css/Navigation.css";
 import "../css/root.css";
 const Navigation = () => {
@@ -39,17 +41,13 @@ const Navigation = () => {
   }, []);
 
   return (
-    <header
-      className={`header ${isNavOpen ? "active" : ""} ${
-        isScrolled ? "scrolled" : ""
-      }`}
-    >
+    <header className={`header`}>
       <div className="container">
         <a href="#" className="logo">
           <img src="logo.svg" width="40" height="5" alt="logo" />
         </a>
 
-        <nav className={`navbar ${isNavOpen ? "active" : ""}`}>
+        <nav>
           <ul className="navbar-list">
             <li>
               <a
@@ -62,7 +60,7 @@ const Navigation = () => {
             </li>
             <li>
               <a
-                href="#shop"
+                to="#shop"
                 className="navbar-link hover-1"
                 onClick={toggleNav}
               >
@@ -109,16 +107,6 @@ const Navigation = () => {
             </li>
           </ul>
         </nav>
-
-        {/* Nav toggler button */}
-        <button
-          className="nav-open-btn"
-          aria-label="open menu"
-          onClick={toggleNav}
-        >
-          <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
-        </button>
-
         {/* Scroll up button */}
         <a
           href="#top"

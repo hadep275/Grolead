@@ -170,3 +170,19 @@ body.nav-active {
   background-color: var(--bg-carolina-blue);
   border-radius: var(--radius-pill);
 }
+
+@media (min-width: 575px) {
+  /*  CUSTOM PROPERTY */
+
+  :root {
+    /*  typography */
+
+    /* font size */
+    --fontSize-1: 4.4rem;
+    --fontSize-2: 3.5rem;
+
+    /*  spacing */
+
+    --section-padding: 100px;
+  }
+}
