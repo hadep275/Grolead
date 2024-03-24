@@ -1,0 +1,60 @@
+/* Navbar.css */
+.header .btn {
+    display: none;
+  }
+  
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-block: 24px;
+    background-color: var(--bg-oxford-blue-2);
+    z-index: 4;
+  }
+  
+  .header.active {
+    padding-block: 8px;
+    box-shadow: var(--shadow-1);
+    border-block-end: 1px solid var(--bg-prussian-blue);
+    animation: slideIn 0.5s ease forwards;
+  }
+  
+  .navbar-list {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  @media screen and (min-width: 768px) {
+    .navbar-list {
+      flex-direction: row;
+      justify-content: flex-end;
+    }
+    .navbar-list li {
+      margin-left: 20px;
+    }
+  }
+  
+  .navbar-link {
+    color: var(--text-wild-blue-yonder);
+    text-decoration: none;
+    padding: 10px;
+    transition: color 0.3s ease;
+  }
+  
+  .navbar-link:hover,
+  .navbar-link:focus {
+    color: var(--text-carolina-blue);
+  }
+  
+  .cart-count {
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    padding: 3px 6px;
+    font-size: 12px;
+    margin-left: 5px;
+  }
+  
+  /* Other styles for your Navbar */
+  

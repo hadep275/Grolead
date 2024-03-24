@@ -1,0 +1,172 @@
+:root {
+  /* *** Colors *** */
+
+  /* Background color */
+  --bg-wild-blue-yonder: rgb(200, 152, 146);
+  --bg-carolina-blue: rgb(236, 92, 14);
+  --bg-prussian-blue: rgb(114, 36, 2);
+  --bg-oxford-blue: rgb(3, 95, 102);
+  --bg-oxford-blue-2: rgb(1, 40, 37);
+
+  /* Text Color  */
+  --text-white: hsla(0, 0%, 100%, 1);
+  --text-alice-blue: rgb(255, 241, 229);
+  --text-columbia-blue: rgb(242, 204, 186);
+  --text-yellow-blue: rgb(168, 123, 1);
+  --text-wild-blue-yonder: rgb(200, 172, 146);
+  --text-carolina-blue: rgb(240, 146, 69);
+  --text-shadow-blue: rgb(176, 150, 125);
+  --text-slate-gray: rgb(143, 112, 102);
+
+  /* Gradient Color  */
+  --gradient-1: linear-gradient(90deg, #ea620e, #d1220b 51%);
+  --gradient-2: linear-gradient(90deg, #eaaf0e, #d14a0b 51%, #ea750e);
+  --gradient-3: linear-gradient(0deg, #1a0800, transparent);
+
+  /* Border color  */
+  --border-wild-blue-yonder: rgb(200, 177, 146);
+  --border-prussian-blue: rgb(68, 40, 34);
+  --border-white: hsl(0, 0%, 100%);
+  --border-white-alpha-15: hsla(0, 0%, 100%, 0.15);
+
+  /* Default color  */
+  --white: hsl(0, 0%, 100%, 1);
+  --black: hsl(0, 0%, 0%, 1);
+
+  /* ***Typography***  */
+
+  /* Font Family  */
+  --fontFamily-noto_sans: "Noto Sans", sans-serif;
+
+  /* Font Size  */
+  --fontSize-1: 2.9rem;
+  --fontSize-2: 2rem;
+  --fontSize-3: 1.8rem;
+  --fontSize-4: 1.6rem;
+  --fontSize-5: 1.5rem;
+  --fontSize-6: 1.4rem;
+  --fontSize-7: 1.2rem;
+  --fontSize-8: 1.3rem;
+
+  /* Font Weight  */
+  --weight-medium: 500;
+  --weight-semiBold: 600;
+  --weight-bold: 700;
+  --weight-extraBold: 800;
+
+  /* Line Height */
+  --lineHeight-1: 1.3;
+  --lineHeight-2: 1.5;
+  --lineHeight-4: 1.5;
+
+  /* Box Shadow */
+  --shadow-1: 0 8px 20px 0 hsla(0, 0%, 0%, 0.05);
+  --shadow-2: 0px 3px 20px hsla(16, 90%, 43%, 0.2);
+
+  /* Border Radius */
+  --radius-6: 6px;
+  --radius-8: 8px;
+  --radius-16: 16px;
+  --radius-48: 48px;
+  --radius-circle: 50%;
+  --radius-pill: 200px;
+
+  /* Spacing */
+  --section-padding: 70px;
+
+  /* Transition */
+  --transition-1: 0.25s ease;
+  --transition-2: 0.5s ease;
+  --cubic-in: cubic-bezier(0.51, 0.03, 0.64, 0.28);
+  --cubic-out: cubic-bezier(0.05, 0.83, 0.52, 0.97);
+}
+
+/*-----------------------------------*\
+  #RESET
+\*-----------------------------------*/
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+a,
+img,
+span,
+input,
+button,
+ion-icon {
+  display: block;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  height: auto;
+}
+
+input,
+button {
+  background: none;
+  border: none;
+  font: inherit;
+  color: inherit;
+}
+
+input {
+  width: 100%;
+  outline: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+ion-icon {
+  pointer-events: none;
+}
+
+address {
+  font-style: normal;
+}
+
+html {
+  font-size: 10px;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--bg-oxford-blue-2);
+  color: var(--text-shadow-blue);
+  font-family: var(--fontFamily-noto_sans);
+  font-size: 1.6rem;
+  line-height: var(--lineHeight-4);
+  overflow-y: overlay;
+}
+
+body.nav-active {
+  overflow: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--bg-carolina-blue);
+  border-radius: var(--radius-pill);
+}
