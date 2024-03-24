@@ -7,13 +7,13 @@
   top: 0;
   left: 0;
   width: 100%;
-  padding-block: 0px;
+  padding-block: 24px;
   background-color: var(--bg-oxford-blue-2);
   z-index: 4;
 }
 
 .header.active {
-  padding-block: 0px;
+  padding-block: 8px;
   box-shadow: var(--shadow-1);
   border-block-end: 1px solid var(--bg-prussian-blue);
   animation: slideIn 0.5s ease forwards;
