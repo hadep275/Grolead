@@ -1,17 +1,18 @@
 import React from 'react'
-import ProductListing from "../components/ProductListing"
+import { Link } from 'react-router-dom';
+
 const Home = () => {
   return (
     <>
-    <div className="banner">
-<h1>Welcome to My Grolead</h1>
-<p>Explore our best collections of products</p>
-{/* <Link to="/products" className="btn">Shop Now</Link> */}
-</div>
-<div className="featured-products">
-<h2>Featured Products</h2>
-<ProductListing/>
-</div></>
+      <div className="banner">
+        <h1>Welcome to Grolead</h1>
+        <p>Explore our best collections of products</p>
+        {/* <Link href="/products">Shop Now</Link> */}
+      </div>
+      <div className="featured-products">
+        <h2>Featured Products</h2>
+      </div>
+    </>
   )
 }
 

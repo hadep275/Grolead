@@ -1,11 +1,17 @@
-import React from 'react'
+import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 const ProductListing = () => {
-  return (
-    <div>
-      
-    </div>
-  )
-}
+  const [products, setProducts] = useState([]);
 
-export default ProductListing
+  return (
+    <>
+      <div>Product1</div>
+      <div>Product2</div>
+      <div>Product3</div>
+      <div>Product4</div>
+    </>
+  );
+};
+
+export default ProductListing;
