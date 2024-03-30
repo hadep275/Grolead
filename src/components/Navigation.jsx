@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "../css/Navigation.css";
 import "../css/root.css";
+
 const Navigation = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
@@ -46,14 +47,24 @@ const Navigation = () => {
           isScrolled ? "scrolled" : ""
         }`}
       >
-          
+          <div className="container">
+          <a href="#" className="logo">
+            <img src="/logo.svg" width="40" height="5" alt="logo" />
+          </a>
+        <nav className={`navbar ${isNavOpen ? "active" : ""}`}>
+            <div className="navbar-top">
+              <a href="#" className="logo">
+                <img src="/logo.svg" width="40" height="5" alt="logo" />
+              </a>
+              <button
+                className="nav-close-btn"
+                aria-label="close menu"
+                onClick={toggleNav}
+              >
+                x
+              </button>
+            </div>
 
-          <nav className={`navbar ${isNavOpen ? "active" : ""}`}>
-        <div className="container">
-
-           <a href="#" className="logo">
-            <img src="logo.svg" width="40" height="5" alt="logo" />
-          </a> 
             <ul className="navbar-list">
               <li>
                 <Link
@@ -112,19 +123,63 @@ const Navigation = () => {
                 </a>
               </li>
             </ul>
-
+            <div className="navbar-bottom">
+              <div className="profile-card">
+                <img
+                  src="./images/author-1.png"
+                  width="48"
+                  height="48"
+                  alt="Lilly"
+                  className="profile-banner"
+                />
+                <div>
+                  <p className="card-title">Hello Lilly !</p>
+                  <p className="card-subtitle">You have 3 new messages</p>
+                </div>
+              </div>
+              <ul className="link-list">
+                <li>
+                  <a href="#" className="navbar-bottom-link hover-1">
+                    Profile
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className="navbar-bottom-link hover-1">
+                    Articles Saved
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className="navbar-bottom-link hover-1">
+                    Add New Post
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className="navbar-bottom-link hover-1">
+                    My Likes
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className="navbar-bottom-link hover-1">
+                    Account Setting
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className="navbar-bottom-link hover-1">
+                    Sign Out
+                  </a>
+                </li>
+              </ul>
+            </div>
+        </nav>
           
-        </div>
-            </nav>
-            {/* Nav toggler button */}
-          <button
-            className="nav-open-btn"
-            aria-label="open menu"
-            onClick={toggleNav}
-            >
-            <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
-          </button>
-      </header>
+        {/* Nav toggler button */}
+        <button
+          className="nav-open-btn"
+          aria-label="open menu"
+          onClick={toggleNav}
+        > ≡
+        </button>
+      </div></header>
       {/* Scroll up button */}
       <a
         href="#top"

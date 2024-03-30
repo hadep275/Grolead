@@ -88,7 +88,7 @@
 .navbar-bottom {
   padding-block: 30px 20px;
   margin-block: 20px 25px;
-  border-block: 1px solid var(--border-prussian-blue);
+  border-bottom: 1px solid var(--border-prussian-blue);
 }
 
 .navbar .profile-card {
@@ -114,6 +114,23 @@
   color: var(--text-alice-blue);
   font-size: var(--fontSize-6);
   padding-block: 6px;
+}
+
+.copyright-text {
+  color: var(--text-Serenade);
+  font-size: var(--fontSize-8);
+}
+
+.navbar-link {
+  color: var(--text-wild-blue-yonder);
+  text-decoration: none;
+  padding: 10px;
+  transition: color 0.3s ease;
+}
+
+.navbar-link:hover,
+.navbar-link:focus {
+  color: var(--text-carolina-blue);
 }
 
 @media (min-width: 1200px) {
@@ -163,17 +180,6 @@
   }
 }
 
-.navbar-link {
-  color: var(--text-wild-blue-yonder);
-  text-decoration: none;
-  padding: 10px;
-  transition: color 0.3s ease;
-}
-
-.navbar-link:hover,
-.navbar-link:focus {
-  color: var(--text-carolina-blue);
-}
 
 .cart-count {
   background-color: red;
@@ -184,18 +190,23 @@
   margin-left: 5px;
 }
 
+
+/*-----------------------------------*\
+  #BACK TO TOP
+\*-----------------------------------*/
+
 .back-top-btn {
   position: fixed;
   bottom: 20px;
   right: 20px;
   width: 50px;
   height: 50px;
-  background-color: var(--bg-prussian-blue);
+  background-color: var(--bg-cedar-wood-finish);
   color: var(--white);
   display: grid;
   place-items: center;
   border-radius: var(--radius-circle);
-  border: 3px solid var(--bg-carolina-blue);
+  border: 3px solid var(--bg-christine);
   transition: var(--transition-1);
   visibility: hidden;
   opacity: 0;
@@ -207,7 +218,6 @@
 }
 
 .back-top-btn.active {
-  position: fixed;
   visibility: visible;
   opacity: 1;
   transform: translateY(-10px);
