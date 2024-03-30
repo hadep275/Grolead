@@ -19,7 +19,7 @@
   animation: slideIn 0.5s ease forwards;
 }
 
-.header .container {
+.container {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -152,9 +152,10 @@
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .navbar-list {
     flex-direction: row;
+    display: flex;
     justify-content: flex-end;
   }
   .navbar-list li {
@@ -206,6 +207,7 @@
 }
 
 .back-top-btn.active {
+  position: fixed;
   visibility: visible;
   opacity: 1;
   transform: translateY(-10px);
