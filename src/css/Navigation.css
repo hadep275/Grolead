@@ -41,17 +41,17 @@
 .navbar {
   position: absolute;
   top: 0;
-  left: 620px;
+  left: 0px;
   max-width: 340px;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   background-color: var(--bg-oxford-blue-2);
   padding: 30px;
   z-index: 2;
   overflow-y: auto;
   visibility: hidden;
   transition: 0.25s var(--cubic-in);
-  animation: slideIn 0.5s ease forwards;
+  animation: slideIn 0.9s ease forwards;
 }
 @keyframes slideIn {
   0% {
