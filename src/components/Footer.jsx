@@ -12,7 +12,7 @@ const Footer = () => {
                 <div className="footer-brand">
                   <a href="#" className="logo">
                     <img
-                      src="./images/logo.svg"
+                      src="/logo.svg"
                       width="40"
                       height="5"
                       loading="lazy"

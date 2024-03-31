@@ -1,18 +1,19 @@
-.header .btn {
+.navbar .btn {
   display: none;
 }
 
-.header {
+.navbar {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  padding-block: 24px;
+  align-items: center;
+  padding: 24px;
   background-color: var(--bg-oxford-blue-2);
   z-index: 4;
 }
 
-.header.active {
+.navbar.active {
   padding-block: 8px;
   box-shadow: var(--shadow-1);
   border-block-end: 1px solid var(--bg-prussian-blue);
@@ -24,14 +25,6 @@
   justify-content: space-between;
   align-items: center;
   gap: 10px;
-}
-@keyframes slideIn {
-  0% {
-    transform: translateY(-100%);
-  }
-  100% {
-    transform: translateY(0);
-  }
 }
 
 .navbar-list {
@@ -48,7 +41,7 @@
 .navbar {
   position: absolute;
   top: 0;
-  right: -340px;
+  left: 620px;
   max-width: 340px;
   width: 100%;
   height: 100vh;
@@ -58,8 +51,16 @@
   overflow-y: auto;
   visibility: hidden;
   transition: 0.25s var(--cubic-in);
+  animation: slideIn 0.5s ease forwards;
 }
-
+@keyframes slideIn {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
 .navbar.active {
   transform: translateX(-340px);
   visibility: visible;
