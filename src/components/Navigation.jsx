@@ -10,6 +10,7 @@ const Navigation = () => {
 
   const toggleNav = () => {
     setIsNavOpen(!isNavOpen);
+
   };
 
   const scrollToTop = () => {
@@ -48,9 +49,9 @@ const Navigation = () => {
         }`}
       >
         <div className="container">
-          <a href="#" className="logo">
-            <img src="/logo.svg" width="40" height="5" alt="logo" />
-          </a>
+              <a href="#" className="logo">
+                <img src="/logo.svg" width="40" height="5" alt="logo" />
+              </a>
           <nav className={`navbar ${isNavOpen ? "active" : ""}`}>
             <div className="navbar-top">
               <a href="#" className="logo">
@@ -170,18 +171,19 @@ const Navigation = () => {
                 </li>
               </ul>
             </div>
-          </nav>
 
+          </nav>
           {/* Nav toggler button */}
           <button
             className="nav-open-btn"
             aria-label="open menu"
             onClick={toggleNav}
-          >
+            >
             {" "}
             ≡
           </button>
         </div>
+        
       </header>
       {/* Scroll up button */}
       <a
