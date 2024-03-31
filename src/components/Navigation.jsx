@@ -47,11 +47,11 @@ const Navigation = () => {
           isScrolled ? "scrolled" : ""
         }`}
       >
-          <div className="container">
+        <div className="container">
           <a href="#" className="logo">
             <img src="/logo.svg" width="40" height="5" alt="logo" />
           </a>
-        <nav className={`navbar ${isNavOpen ? "active" : ""}`}>
+          <nav className={`navbar ${isNavOpen ? "active" : ""}`}>
             <div className="navbar-top">
               <a href="#" className="logo">
                 <img src="/logo.svg" width="40" height="5" alt="logo" />
@@ -170,23 +170,28 @@ const Navigation = () => {
                 </li>
               </ul>
             </div>
-        </nav>
-          
-        {/* Nav toggler button */}
-        <button
-          className="nav-open-btn"
-          aria-label="open menu"
-          onClick={toggleNav}
-        > ≡
-        </button>
-      </div></header>
+          </nav>
+
+          {/* Nav toggler button */}
+          <button
+            className="nav-open-btn"
+            aria-label="open menu"
+            onClick={toggleNav}
+          >
+            {" "}
+            ≡
+          </button>
+        </div>
+      </header>
       {/* Scroll up button */}
       <a
         href="#top"
         className="back-top-btn"
         aria-label="back to top"
         data-back-top-btn
-      ></a>
+      >
+        ⬆︎
+      </a>
     </>
   );
 };
