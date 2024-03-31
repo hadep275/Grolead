@@ -7,7 +7,7 @@
   top: 0;
   left: 0;
   width: 100%;
-  padding-inline: 140px;
+  padding-inline: 40px;
   padding-block: 24px;
   background-color: var(--bg-oxford-blue-2);
   z-index: 4;
@@ -186,7 +186,7 @@
   color: white;
   padding: 3px 6px;
   font-size: 12px;
-  margin-left: 5px;
+  margin-left: -2px;
 }
 
 
