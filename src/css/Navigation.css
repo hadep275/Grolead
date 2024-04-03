@@ -7,7 +7,7 @@
   top: 0;
   left: 0;
   width: 100%;
-  padding-inline: 40px;
+  padding-inline: 4px;
   padding-block: 24px;
   background-color: var(--bg-oxford-blue-2);
   z-index: 4;
@@ -54,7 +54,7 @@
   width: 100%;
   height: 100vh;
   background-color: var(--bg-oxford-blue-2);
-  padding: 0px;
+  padding: 20px;
   z-index: 2;
   overflow-y: auto;
   visibility: hidden;
@@ -177,7 +177,7 @@
     justify-content: flex-end;
   }
   .navbar-list li {
-    margin-left: 0px;
+    margin-left: 20px;
   }
 }
 
