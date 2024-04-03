@@ -4,14 +4,17 @@
 
 .header {
   position: fixed;
-  top: 0;
+  top: -20px;
   left: 0;
+  height: 75px;
   width: 100%;
   padding-inline: 4px;
   padding-block: 24px;
   background-color: var(--bg-oxford-blue-2);
   z-index: 4;
 }
+
+
 
 .header.active {
   padding-block: 8px;
