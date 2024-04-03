@@ -117,8 +117,7 @@ const Navigation = () => {
                   href="#cart"
                   className="navbar-link hover-1"
                   onClick={toggleNav}
-                >
-                  Cart
+                >🛒
                   <span className="cart-count">0</span>{" "}
                   {/* You can dynamically update this with the actual count */}
                 </a>
@@ -183,7 +182,7 @@ const Navigation = () => {
             ≡
           </button>
         </div>
-        
+
       </header>
       {/* Scroll up button */}
       <a

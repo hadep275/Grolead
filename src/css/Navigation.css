@@ -54,7 +54,7 @@
   width: 100%;
   height: 100vh;
   background-color: var(--bg-oxford-blue-2);
-  padding: 30px;
+  padding: 0px;
   z-index: 2;
   overflow-y: auto;
   visibility: hidden;
