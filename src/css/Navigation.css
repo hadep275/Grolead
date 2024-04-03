@@ -4,9 +4,9 @@
 
 .header {
   position: fixed;
-  top: -20px;
+  top: -15px;
   left: 0;
-  height: 75px;
+  height: 80px;
   width: 100%;
   padding-inline: 4px;
   padding-block: 24px;
